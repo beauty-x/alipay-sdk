@@ -1,0 +1,23 @@
+{
+  "name" : "beauty-x/alipay-sdk",
+  "description" : "PayX Server SDK PHP Library",
+  "require" : {
+    "php" : ">=5.3.3",
+    "ext-curl" : "*",
+    "ext-json" : "*",
+    "ext-mbstring" : "*"
+  },
+  "license" : "MIT",
+  "keywords" : [ "payx", "mobile payment processing", "api" ],
+  "extra" : {
+    "branch-alias" : { }
+  },
+  "autoload" : {
+    "classmap" : [ "aop/", "lotusup-runtime/", "AopSdk.php"]
+  },
+  "homepage" : "https://www.kongqueyun.com/",
+  "authors" : [ {
+    "name" : "PayX and contributors",
+    "homepage" : "https://github.com/beauty-x/payx-sdk/tree/master/payx-sdk"
+  } ]
+}

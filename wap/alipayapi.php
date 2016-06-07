@@ -61,12 +61,12 @@ $parameter = array(
 		"body"	=> $body,
 		//其他业务参数根据在线开发文档，添加参数.文档地址:https://doc.open.alipay.com/doc2/detail.htm?spm=a219a.7629140.0.0.2Z6TSk&treeId=60&articleId=103693&docType=1
         //如"参数名"	=> "参数值"   注：上一个参数末尾需要“,”逗号。
-		
+
 );
 
 //建立请求
 $alipaySubmit = new AlipaySubmit($alipay_config);
-$html_text = $alipaySubmit->buildRequestForm($parameter,"get", "确认");
+$html_text = $alipaySubmit->buildRequestForm($parameter,"get", "确认支付");
 echo $html_text;
 
 ?>

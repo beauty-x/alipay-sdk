@@ -183,7 +183,7 @@
                     <dt></dt>
                     <dd id="btn-dd">
                         <span class="new-btn-login-sp">
-                            <button class="new-btn-login" type="submit" style="text-align:center;">确 认</button>
+                            <button class="new-btn-login" type="submit" style="text-align:center;">确 认a</button>
                         </span>
                         <span class="note-help">如果您点击“确认”按钮，即表示您同意该次的执行操作。</span>
                     </dd>
@@ -193,7 +193,7 @@
         <div id="foot">
 			<ul class="foot-ul">
 				<li>
-					支付宝版权所有 2015-2018 ALIPAY.COM 
+					支付宝版权所有 2015-2018 ALIPAY.COM
 				</li>
 			</ul>
 		</div>

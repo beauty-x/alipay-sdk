@@ -13,7 +13,7 @@
     "branch-alias" : { }
   },
   "autoload" : {
-    "classmap" : [ "aop/", "lotusphp_runtime/", "AopSdk.php"]
+    "classmap" : [ "aop/", "lotusphp_runtime/", "AopSdk.php", "wap/"]
   },
   "homepage" : "https://www.kongqueyun.com/",
   "authors" : [ {

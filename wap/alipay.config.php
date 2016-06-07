@@ -12,8 +12,9 @@
  * 1、检查浏览器配置，不让浏览器做弹框屏蔽设置
  * 2、更换浏览器或电脑，重新登录查询。
  */
- 
+
 //↓↓↓↓↓↓↓↓↓↓请在这里配置您的基本信息↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
+$alipay_config = array();
 //合作身份者ID，签约账号，以2088开头由16位纯数字组成的字符串，查看地址：https://b.alipay.com/order/pidAndKey.htm
 $alipay_config['partner']		= '';
 
@@ -23,8 +24,9 @@ $alipay_config['seller_id']	= $alipay_config['partner'];
 //商户的私钥,此处填写原始私钥，RSA公私钥生成：https://doc.open.alipay.com/doc2/detail.htm?spm=a219a.7629140.0.0.nBDxfy&treeId=58&articleId=103242&docType=1
 $alipay_config['private_key_path']	= 'key/rsa_private_key.pem';
 
-//支付宝的公钥，查看地址：https://b.alipay.com/order/pidAndKey.htm 
+//支付宝的公钥，查看地址：https://b.alipay.com/order/pidAndKey.htm
 $alipay_config['ali_public_key_path']= 'key/alipay_public_key.pem';
+
 // 服务器异步通知页面路径  需http://格式的完整路径，不能加?id=123这类自定义参数，必须外网可以正常访问
 $alipay_config['notify_url'] = "http://商户网关网址/alipay.wap.create.direct.pay.by.user-PHPUTF-8/notify_url.php";
 
@@ -42,14 +44,14 @@ $alipay_config['input_charset']= strtolower('utf-8');
 $alipay_config['cacert']    = getcwd().'\\cacert.pem';
 
 //访问模式,根据自己的服务器是否支持ssl访问，若支持请选择https；若不支持请选择http
-$alipay_config['transport']    = 'http';
+$alipay_config['transport']    = 'https';
 
 // 支付类型 ，无需修改
 $alipay_config['payment_type'] = "1";
-		
+
 // 产品类型，无需修改
 $alipay_config['service'] = "alipay.wap.create.direct.pay.by.user";
-
+return $alipay_config;
 //↑↑↑↑↑↑↑↑↑↑请在这里配置您的基本信息↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
 
 

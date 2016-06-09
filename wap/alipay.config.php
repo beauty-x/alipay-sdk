@@ -21,29 +21,10 @@ $alipay_config['partner']		= '2088211697060642';
 $alipay_config['seller_id']	= $alipay_config['partner'];
 
 //商户的私钥,此处填写原始私钥，RSA公私钥生成：https://doc.open.alipay.com/doc2/detail.htm?spm=a219a.7629140.0.0.nBDxfy&treeId=58&articleId=103242&docType=1
-$alipay_config['private_key_path']	= '-----BEGIN RSA PRIVATE KEY-----
-MIICXAIBAAKBgQDMNVoEdDq7nlnjf2ymAAF5dD+s50cWlCsv86xro9Hf4DNung19
-JSjb6ahymBFuFvNH8e421LQZiR4m0pTEB3QBo9MXU+/zSDFriyolOClNu7flWVUu
-80i9mVUN2qkFNv7tPVPCfkBcdTAB8Hu3CfQssXPSC+Hqa57ptxmcimxUzwIDAQAB
-AoGATx6csf0WhHrl+O71+Zsm9xfDVAqH0Ie38+xFca8XMdZ8Fu/F6ibrncj6Kuwg
-VLcvq0BhO31OClbGB+SvHwSEPSzNAVye0V+ZICVUQtNeSNgpS1ugTNTbxG7IOL6O
-RQXulZanVOidUzWO8icoLHdt8pSCHtmLWd17BOY7rz5hbYECQQD1dKThUJtxR6WV
-+tUMUVgY58T2Ox8l7ANwLsqkBD2/lPNLwt9qWb/dy6JVW1v3ThQwti2HqG1CWrhJ
-Er0e+43jAkEA1PsZJVpSiD/BIk6vwGZGEKTcGmT8ZJW8y/IVVTjThbv3oejYl9SW
-RWyvEhHNH5wnpC6Gt726sV0CzGM/nuRRJQJBALhuA7GU2qdcWUv/I/PUbyiPhYwq
-UjYxR0gUsIha83avWbv0WeDUPPlPl9MhCVIiJcOQL1e+MxJnjg7B+L5971cCQEHA
-t9WxWfOYgz7dPiNPL+hpjU5UyRsgo2XveiiSX7NVAbGp2lydlDsgv7f7aPGOWyqz
-9oF5gM7LIVcKeRTL9kUCQDbQblqdZwsG8ymhxtTZZzRULtX6YqA1zDUwm714OFVM
-1AP3mCnPiNVELNtxMHveVq1lcFBO9pwB5Mb4y+agXyg=
------END RSA PRIVATE KEY-----';
+$alipay_config['private_key_path']	= '';
 
 //支付宝的公钥，查看地址：https://b.alipay.com/order/pidAndKey.htm
-$alipay_config['ali_public_key_path']= '-----BEGIN PUBLIC KEY-----
-MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCnxj/9qwVfgoUh/y2W89L6BkRA
-FljhNhgPdyPuBV64bfQNN1PjbCzkIM6qRdKBoLPXmKKMiFYnkd6rAoprih3/PrQE
-B/VsW8OoM8fxn67UDYuyBTqA23MML9q1+ilIZwBC2AQ2UBVOrFXfFl75p6/B5Ksi
-NG9zpgmLCUYuLkxpLQIDAQAB
------END PUBLIC KEY-----';
+$alipay_config['ali_public_key_path']= '';
 // 服务器异步通知页面路径  需http://格式的完整路径，不能加?id=123这类自定义参数，必须外网可以正常访问
 $alipay_config['notify_url'] = "https://pay.kongqueyun.com/payx_api/notify/ch_id/ch_rm63v10ksthwwr6dvkls55t6";
 
